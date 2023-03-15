@@ -1,3 +1,28 @@
 # atlantic-storm-template
 
 ![screenshot](https://user-images.githubusercontent.com/41169708/225189250-b3ed429a-5c00-42fb-ab3a-b8e9d750da14.png)
+
+
+## Usage
+
+```bash
+# cd into folder
+cd client
+
+# Install dependencies for front end and back end
+npm install
+
+# Build front end assets with webpack
+npm run build
+
+# Run Client
+npm run dev
+```
+
+Load up http://localhost:3000 in your browser to view the example website.
+
+## Libraries and frameworks used
+- [React](https://reactjs.org/) - "A JavaScript library for building user interfaces".
+- [TailwindCss](https://reactjs.org/) - "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.".
+- [Webpack](https://www.npmjs.com/package/webpack) - A popular tool for building
+front end assets e.g. CSS and JavaScript.
