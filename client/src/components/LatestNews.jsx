@@ -2,7 +2,7 @@ import React from "react";
 import HorizontalRule from "./common/HorizontalRule";
 import CustomLink from "../components/common/CustomLink";
 
-import { faComments } from "@fortawesome/free-solid-svg-icons";
+import { faCommentAlt } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LATEST_NEWS_DATA = [
@@ -54,7 +54,7 @@ const LatestNews = () => {
                 <span className="flex justify-between">
                   <h2 className="text-xl mb-2">{title}</h2>
                   <span>
-                    <FontAwesomeIcon className="mx-2" icon={faComments} />
+                    <FontAwesomeIcon className="mx-2 text-primary" icon={faCommentAlt} />
                     {comments}
                   </span>
                 </span>

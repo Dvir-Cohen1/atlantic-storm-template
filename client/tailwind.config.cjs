@@ -21,6 +21,7 @@ module.exports = {
       'light-text': '#8493bc',
       'lighter-text': '#515b71',
       'card-background': '#151821',
+      'card-alt-background': '#11141c',
       'page-background': '#0a0c11',
       'main-background': '#07090c',
       'hr-top-color': '#141720',
