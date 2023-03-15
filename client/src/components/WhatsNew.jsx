@@ -6,6 +6,25 @@ import {
   DangerButton,
   DefaultButton,
 } from "./common/Buttons";
+
+const secondary_cards_data = [
+  {
+    title: "WORLD CHAMPIONS",
+    dueDate: "Thu 18th Sep 2023 - 8PM",
+    image: "/background2.jpg",
+  },
+  {
+    title: "DUIS AUTE IRURE",
+    dueDate: "Thu 18th Sep 2023 - 8PM",
+    image: "/background3.jpg",
+  },
+  {
+    title: "THE QUICK BROWN FOX",
+    dueDate: "Thu 18th Sep 2023 - 8PM",
+    image: "/background.png",
+  },
+];
+
 const WhatsNew = () => {
   return (
     <div className="bg-main-background">
@@ -29,16 +48,25 @@ const WhatsNew = () => {
           <PrimaryButton> READ MORE </PrimaryButton>
         </div>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  secondary-whats-new bg-page-background">
-        <div style={{ backgroundImage: `url('/background2.jpg')`,backgroundPosition:'center',backgroundSize:'cover' }}>WORLD CHAMPIONS
-        <h6 className="text-sm font-normal text-primary my-3">Thu 18th Sep 2023 - 8PM</h6></div>
-        <div style={{ backgroundImage: `url('/background3.jpg')`,backgroundPosition:'center',backgroundSize:'cover' }}>DUIS AUTE IRURE
-        <h6 className="text-sm font-normal text-primary my-3">Thu 18th Sep 2023 - 8PM</h6></div>
-        <div style={{ backgroundImage: `url('/background.png')`,backgroundPosition:'center',backgroundSize:'cover' }}>THE QUICK BROWN FOX
-        <h6 className="text-sm font-normal text-primary my-3">Thu 18th Sep 2023 - 8PM</h6></div>
-        {/* <img className="shadow-inner backdrop-blur-3xl drop-shadow-lg " src="/background.png" alt="" />
-        <img className="shadow-inner drop-shadow-lg " src="/background.png" alt="" />
-        <img className="shadow-inner drop-shadow-lg " src="/background.png" alt="" /> */}
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  secondary-whats-new bg-page-background">
+        {secondary_cards_data.map((data, indexId) => {
+          return (
+            <div
+            key={indexId}
+              style={{
+                backgroundImage: `url('${data.image}')`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
+              {data.title}
+              <hr className="w-10 mt-2 text-primary" />
+              <h6 className="text-sm font-normal text-primary my-3">
+                {data.dueDate}
+              </h6>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

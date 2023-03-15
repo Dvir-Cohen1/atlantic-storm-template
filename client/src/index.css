@@ -107,6 +107,11 @@ button:focus-visible {
   min-height: 240px;
 }
 
+.container {
+  width: 1350px;
+  /* background-color: #14ffa542; */
+}
+
 .secondary-whats-new div {
   background-image: none;
   box-shadow: inset 0px 0 20px 5px black;
@@ -114,7 +119,9 @@ button:focus-visible {
   font-weight: 500;
   font-size: 1.2rem;
   cursor: pointer;
-
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 .secondary-whats-new div:hover {
