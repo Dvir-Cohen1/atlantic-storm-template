@@ -1,7 +1,5 @@
 # atlantic-storm-template
 
-![screenshot](https://user-images.githubusercontent.com/41169708/225467062-ad971b7d-b5dc-4fd6-88c5-924bae86d03e.png)
-
 
 ## Usage
 
