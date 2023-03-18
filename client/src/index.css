@@ -82,6 +82,8 @@ button:focus-visible {
   display: flex;
   align-items: center;
   height: inherit;
+  background-position: center;
+  transition: all 150ms ease-in-out;
 }
 
 .navbar-links a {
@@ -90,6 +92,7 @@ button:focus-visible {
 
 .navbar-links:hover {
   box-shadow: 0px 2px 0 0 #14ffa5;
+
 }
 
 .navbar-links:hover a {

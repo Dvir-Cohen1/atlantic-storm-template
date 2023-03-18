@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { appRoutes } from "./_routes";
 import Layout from "../layout/Layout";
+import PageNotFound from "../pages/404/PageNotFound";
 
 const RouterWrapper = () => {
   return (
@@ -16,6 +17,7 @@ const RouterWrapper = () => {
             />
           );
         })}
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
   );

@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
-import Navbar from "./navbar/Navbar";
-import Footer from "./footer/Footer";
 import { Outlet } from "react-router-dom";
+
+const Navbar = React.lazy(() => import("./navbar/Navbar"));
+const Footer = React.lazy(() => import("./footer/Footer"));
 
 const Layout = () => {
   return (
@@ -12,7 +13,7 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </main>
-      <Footer/>
+      <Footer />
     </section>
   );
 };
