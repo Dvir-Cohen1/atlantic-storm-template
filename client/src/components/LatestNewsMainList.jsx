@@ -19,7 +19,7 @@ const LatestNews = () => {
                 indexId === 0 && "border-t-2 border-primary"
               }`}
             >
-              <img className="mr-3 hidden lg:block" width={260} src={image} />
+              <img className="mr-3 hidden lg:block" width={260} src={image} alt={title} />
               <div>
                 <span className="flex justify-between">
                   <h2 className="text-xl mb-2"><Link to={'/'}>{title}</Link></h2>

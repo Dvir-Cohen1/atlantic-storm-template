@@ -12,7 +12,7 @@ const LiveStreams = () => {
         {LIVE_STREAMS_DATA.map(({ userName, image, views, streamLink }, indexId) => {
           return (
             <div className="grid grid-cols-2 items-center" key={indexId}>
-              <img className="m-2 hidden md:block" src={image} />
+              <img className="m-2 hidden md:block" loading="lazy" src={image} alt={userName} />
               <div className="mx-5 flex flex-col justify-center gap-2">
                 <p className="text-base text-primary font-semibold">
                   {userName}

@@ -10,11 +10,11 @@ const LatestBlogs = () => {
       <LatestTitle secondWord="Blogs" />
       <div className="p-4 my-3 bg-card-background border-t-2 border-primary">
         {LATEST_BLOGS_DATA.map(
-          ({ title, createdAt, comments, profileImage }) => {
+          ({ title, createdAt, comments, profileImage },indexId) => {
             return (
-              <div className="flex items-center gap-2 text-sm py-3">
+              <div key={indexId} className="flex items-center gap-2 text-sm py-3">
                 <div>
-                  <img width={35} src={profileImage} alt="" />
+                  <img width={35}  src={profileImage} alt={title} />
                 </div>
                 <div>
                   <Link to={"/"}>{title}</Link>

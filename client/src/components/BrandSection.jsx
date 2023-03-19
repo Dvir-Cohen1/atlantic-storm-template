@@ -8,8 +8,8 @@ const BrandSection = () => {
         <AppLogo />
       </div>
       <div className="flex items-center">
-        <img className="mr-16" width={150} src="/STEELSERIES-LOGO.png" alt="" />
-        <img width={120} src="/STEAM-LOGO.png" alt="" />
+        <img className="mr-16" width="150px" height="150px" loading="lazy" src="/STEELSERIES-LOGO.png" alt="img" />
+        <img width="120px" height="120px" src="/STEAM-LOGO.png" loading="lazy" alt="img" />
       </div>
     </div>
   );

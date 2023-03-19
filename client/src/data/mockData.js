@@ -1,9 +1,10 @@
 export const MAIN_CARD_DATA = {
-  title:"LOREM IPRUM DOLOR",
-  createdAt:"Thu 18th Sep 2023 - 8PM",
-  content:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  path:'/'
-}
+  title: "LOREM IPRUM DOLOR",
+  createdAt: "Thu 18th Sep 2023 - 8PM",
+  content:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  path: "/",
+};
 
 export const SECONDARY_CARDS_DATA = [
   {
@@ -143,4 +144,61 @@ export const LATEST_BLOGS_DATA = [
     profileImage:
       "https://cdn-icons-png.flaticon.com/512/149/149071.png?w=826&t=st=1679111560~exp=1679112160~hmac=ea5cfe645143d7cd10b813224cff7a1283fabff35a8a4bfea1b563eb917c8c5e",
   },
+];
+
+export const LATEST_GALLERIES_DATA = [
+  {
+    title: "NiP Wins ESL One",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background.png",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background.png",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background3.jpg",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background2.jpg",
+  },
+];
+
+export const LATEST_VIDEOS_DATA = [
+  {
+    title: "NiP Wins ESL One",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background3.jpg",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background3.jpg",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background3.jpg",
+  },
+  {
+    title: "LOREM IPRUM DOLOR",
+    createdAt: "Thu 18th Sep 2023 - 8PM",
+    imagePath: "/background3.jpg",
+  },
+];
+
+export const IMAGES_DATA = [
+  { imageTitle: "1", imagePath: "/STEAM-LOGO.png" },
+  { imageTitle: "2", imagePath: "/STEELSERIES-LOGO.png" },
+  { imageTitle: "3", imagePath: "/twitch-logo.png" },
+  { imageTitle: "4", imagePath: "/STEELSERIES-LOGO.png" },
+  { imageTitle: "5", imagePath: "/STEAM-LOGO.png" },
+  { imageTitle: "6", imagePath: "/STEELSERIES-LOGO.png" },
+  { imageTitle: "7", imagePath: "/STEAM-LOGO.png" },
+  { imageTitle: "8", imagePath: "/STEELSERIES-LOGO.png" },
 ];

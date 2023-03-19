@@ -5,18 +5,14 @@ import Layout from "../layout/Layout";
 import PageNotFound from "../pages/404/PageNotFound";
 
 const RouterWrapper = () => {
+  const routeComponents = appRoutes.map((route, index) => (
+    <Route key={index} path={route.path} element={<route.component />} />
+  ));
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        {appRoutes.map((route, index) => {
-          return (
-            <Route
-              path={route.path}
-              element={<route.component />}
-              key={index}
-            />
-          );
-        })}
+        {routeComponents}
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

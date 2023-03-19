@@ -47,8 +47,10 @@ a:hover {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('.background.png');
   background-position: center;
   background-image: linear-gradient(360deg, #07090c, #07090cce, #00000000), url('./background.png');
+  /* background-image: linear-gradient(180deg, #07090c00, #07090cbb, #000508c0, #000508ea, #000508e1, #000000c0), url('./background.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -90,10 +92,15 @@ button:focus-visible {
   color: white;
 }
 
-.navbar-links:hover {
-  box-shadow: 0px 2px 0 0 #14ffa5;
+.navbar-links>a:active {
+  color: #00c177 !important;
 
 }
+
+/* .navbar-links:hover {
+  box-shadow: 0px 2px 0 0 #14ffa5;
+
+} */
 
 .navbar-links:hover a {
   color: #14ffa5;
@@ -111,7 +118,8 @@ button:focus-visible {
 }
 
 .container {
-  width: 1350px;
+  /* width: 1350px; */
+  /* width: 100%; */
   /* background-color: #14ffa542; */
 }
 
@@ -189,4 +197,8 @@ button:focus-visible {
 
 .active-link>a {
   color: #14ffa5;
+}
+
+.slide-transition {
+  transition: transform 0.5s ease;
 }
